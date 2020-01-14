@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>MII - CUTTING TOOLS PREDICTION</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="public/images/icons/favicon.ico" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="public/vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="public/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="public/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="public/vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="public/vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="public/vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="public/vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="public/vendor/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/scss" href="public/css/util.css">
+	<link rel="stylesheet" type="text/scss" href="public/css/main.css">
+	<link rel="stylesheet" type="text/css" href="public/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="public/css/apa.css">
+	<!-- <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
+	<!--===============================================================================================-->
+</head>
+
+<body>
+	<div class="w3-container">
+		<form method='POST' action='/logout'>
+			<button type="submit" class="w3-button w3-round-xlarge w3-red" style="width: 150px; margin-left: 1200px;" >Log Out</button>
+			</div></form>
+	</div>
+	<div class="container">
+		
+		<table class="responsive-table">
+			<span class="w3-title " style="font-size: x-large; margin-left: 290px; color: black;">
+				Tools Inventory Control - Mesin Isuzu Indonesia
+			</span>
+			<thead>
+				<tr>
+					<th scope="col">Tools Code</th>
+					<th scope="col">Daily Usage</th>
+					<th scope="col">Actual Stock</th>
+					<th scope="col">Std Stock (Monthly)</th>
+					<th scope="col">Status</th>
+					<th scope="col">Date</th>
+					<th scope="col">Location</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<th scope="row">SNMN 433 ACZ310</th>
+					<td data-title="Released">5</td>
+					<td data-title="Studio">1000</td>
+					<td data-title="Worldwide Gross">2000</td>
+					<td data-title="Domestic Gross">OK</td>
+					<td data-title="Foreign Gross">14/01/2020</td>
+					<td data-title="Budget">Rack A-1</td>
+				</tr>
+				<tr>
+					<th scope="row">ID-1098</th>
+					<td data-title="Released">7</td>
+					<td data-title="Studio">980</td>
+					<td data-title="Worldwide Gross">1500</td>
+					<td data-title="Domestic Gross">OK</td>
+					<td data-title="Foreign Gross">14/01/2020</td>
+					<td data-title="Budget">Rack B-4</td>
+				</tr>
+				<tr>
+					<th scope="row">IR-1034</th>
+					<td data-title="Released">14</td>
+					<td data-title="Studio">1410</td>
+					<td data-title="Worldwide Gross">1400</td>
+					<td data-title="Domestic Gross">SHORTAGE</td>
+					<td data-title="Foreign Gross">14/01/2020</td>
+					<td data-title="Budget">Rack F-2</td>
+				</tr>
+				<tr>
+					<th scope="row">SPG 431 ACZ 310</th>
+					<td data-title="Released">20</td>
+					<td data-title="Studio">201</td>
+					<td data-title="Worldwide Gross">4000</td>
+					<td data-title="Domestic Gross">EXCESS</td>
+					<td data-title="Foreign Gross">14/01/2020</td>
+					<td data-title="Budget">Rack C-6</td>
+				</tr>
+				<tr>
+					<th scope="row">TEEN 43R</th>
+					<td data-title="Released">2</td>
+					<td data-title="Studio">80</td>
+					<td data-title="Worldwide Gross">90</td>
+					<td data-title="Domestic Gross">OK</td>
+					<td data-title="Foreign Gross">14/01/2020</td>
+					<td data-title="Budget">Rack A-2</td>
+				</tr>
+				<tr>
+					<th scope="row">SNMN 433 ACZ310</th>
+					<td data-title="Released">201</td>
+					<td data-title="Studio">1290</td>
+					<td data-title="Worldwide Gross">3000</td>
+					<td data-title="Domestic Gross">OK</td>
+					<td data-title="Foreign Gross">14/01/2020</td>
+					<td data-title="Budget">Rack B-9</td>
+				</tr>
+				<tr>
+					<th scope="row">IB-1002-1R</th>
+					<td data-title="Released">290</td>
+					<td data-title="Studio">130</td>
+					<td data-title="Worldwide Gross">1200</td>
+					<td data-title="Domestic Gross">SHORTAGE</td>
+					<td data-title="Foreign Gross">14/01/2020</td>
+					<td data-title="Budget">Rack C-1</td>
+				</tr>
+				<tr>
+					<th scope="row">SPHX 1205ZCELGP</th>
+					<td data-title="Released">  12</td>
+					<td data-title="Studio">400</td>
+					<td data-title="Worldwide Gross">3000</td>
+					<td data-title="Domestic Gross">EXCESS</td>
+					<td data-title="Foreign Gross">14/01/2020</td>
+					<td data-title="Budget">Rack A-3</td>
+				</tr>
+				<tr>
+					<th scope="row">IB-1002-1R</th>
+					<td data-title="Released"><input type="text" style="width:100px ; text-align: center; "></td>
+					<td data-title="Studio"><input type="text" style="width:100px ; text-align: center; "></td>
+					<td data-title="Worldwide Gross"><input type="text" style="width:100px ; text-align: center; "></td>
+					<td data-title="Domestic Gross"><input type="text" style="width:100px ; text-align: center; "></td>
+					<td data-title="Foreign Gross"><input type="text" style="width:100px ; text-align: center; "></td>
+					<td data-title="Budget"><input type="text" style="width:100px ; text-align: center; "></td>
+				</tr>
+				<tr>
+					<th scope="row">IB-1002-1R</th>
+					<td data-title="Released"><input type="text" style="width:100px ; text-align: center; "></td>
+					<td data-title="Studio"><input type="text" style="width:100px ; text-align: center; "></td>
+					<td data-title="Worldwide Gross"><input type="text" style="width:100px ; text-align: center; "></td>
+					<td data-title="Domestic Gross"><input type="text" style="width:100px ; text-align: center; "></td>
+					<td data-title="Foreign Gross"><input type="text" style="width:100px ; text-align: center; "></td>
+					<td data-title="Budget"><input type="text" style="width:100px ; text-align: center; "></td>
+				</tr>
+				
+			</tbody>
+			
+		</table>
+		
+	</div>
+	<div class="w3-container">
+		<button type="submit" class="w3-button w3-round-xxlarge w3-green" style=" width: 200px; margin-left: 1055px; margin-top: -29px; " >
+			Add Table</button>
+	</div>
+	<div class="w3-container">
+		<a href="/graph.html"><button type="submit" class="w3-button w3-round-xxlarge w3-blue" style=" width: 200px; margin-left: 1055px; margin-top: -1px; " >
+			Stock Analytics</button></a>
+	</div>
+	<!--===============================================================================================-->
+	<script src="public/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="public/vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="public/vendor/bootstrap/js/popper.js"></script>
+	<script src="public/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="public/vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="public/vendor/daterangepicker/moment.min.js"></script>
+	<script src="public/vendor/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+	<script src="public/vendor/countdowntime/countdowntime.js"></script>
+	<!--===============================================================================================-->
+	<script src="public/js/main.js"></script>
+</body>
+
+</html>

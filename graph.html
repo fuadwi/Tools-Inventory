@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title></title>
+</head>
+<body>
+    <div class="container">
+<canvas id="myChart"></canvas>
+    </div>
+    <script>
+    let myChart = document.getElementById('myChart').getContext('2d');
+    // Chart.defaults.global.defaultFontFamily = 'Lato';
+    // Chart.defaults.global.defaultFontSize = 18;
+    Chart.defaults.global.defaultFontColor = '#777';
+    let massPopChart = new Chart(myChart,{
+        type:'line',
+        data:{
+            labels:['SNMN 433 ACZ310','ID-1098','IR-1034','SPG 431 ACZ 310','TEEN 43R','SNMN 433 ACZ310','IB-1002-1R','SPHX 1205ZCELGP'],
+            datasets:[{
+                label:'Stock Qty',
+                data:[
+                    1000, 980, 1410, 201, 80,1290, 130, 400 
+                ],
+                backgroundColor:['rgba(58, 237, 38, 0.6)']
+            }]
+        }
+    })
+    </script>
+</body>
+</html>
